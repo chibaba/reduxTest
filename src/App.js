@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux'
 
 import Posts from './components/posts';
 import Postform from './components/Postform'
@@ -8,6 +9,7 @@ import Postform from './components/Postform'
 
 function App() {
   return (
+    <Provider>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -27,6 +29,7 @@ function App() {
       <hr />
       <Posts />
     </div>
+    </Provider>
   );
 }
 
