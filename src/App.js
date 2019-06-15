@@ -4,12 +4,13 @@ import './App.css';
 import { Provider } from 'react-redux'
 
 import Posts from './components/posts';
-import Postform from './components/Postform'
+import Postform from './components/Postform';
 
+import store  from './store'
 
 function App() {
   return (
-    <Provider>
+    <Provider store={store}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
